@@ -1,0 +1,10 @@
+/* Estilos globais */
+@import url('/estilos/globais/global.css');
+@import url('/estilos/globais/tipografia.css');
+@import url('/estilos/globais/cores.css');
+
+/* Header/menu */
+@import url('/estilos/header.css');
+
+/* Main */
+@import url('/estilos/main.css');
