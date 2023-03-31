@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .diretores {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -6,9 +10,13 @@
   margin: 0 auto;
 }
 
-.titulo-diretores {
+.diretores-titulo {
+  display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px;
 }
 
 .diretor {
@@ -54,19 +62,53 @@
   right: -260px;
 }
 
-.texto-diretor {
-  padding: 0;
-  margin: 0;
-  padding: 40px 0;
-  text-align: center;
+.diretor {
   margin: auto 0;
-  height: fit-content;
+  max-height: fit-content;
   background-color: var(--cor-p-5);
   z-index: -1;
 }
 
+.texto-diretor {
+  padding: 0;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+  width: fit-content;
+}
+
 @media (max-width: 1000px) {
-  .diretor:nth-of-type(even) {
-    box-shadow: 80px 0 0 var(--cor-p-5), -200px 0 0 var(--cor-p-5);
+  .diretor:nth-of-type(odd)::before {
+    top: -48px;
+    left: -220px;
+  }
+  .diretor:nth-of-type(even)::after {
+    top: -48px;
+    right: -220px;
+  }
+}
+
+@media (max-width: 800px) {
+  .diretor:nth-of-type(odd)::before {
+    width: 240px;
+    height: 240px;
+    top: -20px;
+    left: -160px;
+  }
+  .diretor:nth-of-type(even)::after {
+    width: 240px;
+    height: 240px;
+    top: -20px;
+    right: -160px;
+  }
+  .diretores-titulo h1 {
+    word-break: break-all;
+  }
+  .texto-diretor {
+    margin: 0 auto;
+  }
+  .texto-diretor h2 {
+    max-width: 16ch;
+    margin: 0 auto;
   }
 }

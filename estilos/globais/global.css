@@ -13,7 +13,7 @@ p {
 
 body {
   background-color: #6d539c;
-  height: 3000px;
+  height: 6000px;
 }
 
 a {
@@ -41,13 +41,14 @@ a {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 80px;
+  padding: 0;
+  align-self: center;
+  margin: 0 80px;
 }
 
 @media (max-width: 800px) {
   .container {
-    width: 600px;
+    max-width: 600px;
     grid-template-columns: 1fr;
     margin: 80px auto;
   }
