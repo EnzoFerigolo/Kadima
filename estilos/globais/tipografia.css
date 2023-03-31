@@ -94,4 +94,34 @@
   .font-2-m {
     font-size: 1.5rem;
   }
+  .font-2-s {
+    font-size: 0.75rem;
+  }
+  .font-3 {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-1-l {
+    font-size: 1.5rem;
+  }
+  .font-1-m {
+    font-size: 1.125rem;
+  }
+  .font-1-s {
+    font-size: 1rem;
+  }
+  .font-1-xs {
+    font-size: 0.85rem;
+  }
+  .font-2-m {
+    font-size: 0.35rem;
+  }
+  .font-2-s {
+    font-size: 0.35rem;
+  }
+  .font-3 {
+    font-size: 0.75rem;
+  }
 }

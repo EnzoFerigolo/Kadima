@@ -50,11 +50,23 @@ a {
   .container {
     max-width: 600px;
     grid-template-columns: 1fr;
-    margin: 80px auto;
+    margin: 0;
   }
   .btn-1 {
     font-size: 1.25rem;
     padding: 12px 24px;
     width: fit-content;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 320px;
+  }
+  .btn-1 {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    width: fit-content;
+    border-radius: 2px;
   }
 }

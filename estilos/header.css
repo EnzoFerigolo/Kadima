@@ -67,7 +67,6 @@ header a {
   .botao-menu {
     width: fit-content;
     place-self: left;
-
   }
   header nav {
     grid-row: 2;
@@ -94,7 +93,6 @@ header a {
     background-color: var(--cor-p5);
     display: inline-block;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -119,5 +117,25 @@ header a {
   .botao-menu {
     grid-row: 1;
     place-self: center;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+  header ul {
+    gap: 8px;
+  }
+  header li {
+    padding: 4px 8px;
+  }
+  .logo-menu img{
+    width: 120px;
+  }
+  .botao-menu {
+    margin: 0;
   }
 }

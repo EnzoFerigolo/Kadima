@@ -46,6 +46,7 @@
   border: 3px solid var(--cor-p-5);
   position: relative;
   box-shadow: 24px 24px 0px 0px #d8cfe9;
+  box-sizing: border-box;
 }
 
 .especializacao::before {

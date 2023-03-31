@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 .diretores {
@@ -8,12 +9,25 @@ body {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  position: relative;
+}
+
+.diretores::after {
+  content: "";
+  height: 1200px;
+  width: 200px;
+  display: block;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  background-image: url('/imgs/decorador-diretores.png');
+  right: 0;
 }
 
 .diretores-titulo {
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   max-width: 1000px;
   margin: 0 auto;
   padding: 80px;
@@ -21,11 +35,10 @@ body {
 
 .diretor {
   display: grid;
-  margin-top: 40px;
 }
 
 .diretor + .diretor {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .diretor:nth-of-type(odd) {
@@ -75,6 +88,10 @@ body {
   padding: 40px 0;
   text-align: center;
   width: fit-content;
+}
+
+.diretor {
+  z-index: 2;
 }
 
 @media (max-width: 1000px) {
